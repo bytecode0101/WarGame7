@@ -10,6 +10,7 @@ namespace WarGame7
     {
         static void Main(string[] args)
         {
+            //Something new
         }
     }
 }
