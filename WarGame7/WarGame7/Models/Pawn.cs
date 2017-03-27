@@ -9,6 +9,8 @@ namespace WarGame7
     public class Pawn
     {
         public int Position { get; set; }
+        //ff
+
 
     }
 }
