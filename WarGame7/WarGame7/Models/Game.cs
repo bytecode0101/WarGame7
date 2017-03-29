@@ -7,14 +7,19 @@ namespace WarGame7
 {
     public class Game
     {
+        private Map map;
+        private List<Player> players;
+
         public Map Map
         {
             get
             {
-                throw new System.NotImplementedException();
+                return map;
             }
+
             set
             {
+                map = value;
             }
         }
 
@@ -22,12 +27,37 @@ namespace WarGame7
         {
             get
             {
-                throw new System.NotImplementedException();
+                return players;
             }
+
             set
             {
+                players = value;
             }
         }
+
+
+        //public Map Map
+        //{
+        //    get
+        //    {
+        //        throw new System.NotImplementedException();
+        //    }
+        //    set
+        //    {
+        //    }
+        //}
+
+        //public List<Player> Players
+        //{
+        //    get
+        //    {
+        //        throw new System.NotImplementedException();
+        //    }
+        //    set
+        //    {
+        //    }
+        //}
 
         public void Play()
         {
@@ -42,6 +72,15 @@ namespace WarGame7
         public void Save(string filePath)
         {
             throw new System.NotImplementedException();
+        }
+
+        public void AddPlayer()
+        {
+
+            Player myplayer = new Player();
+            myplayer.Name = Console.ReadLine();
+            Players.Add(myplayer);
+
         }
     }
 }
